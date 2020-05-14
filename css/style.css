@@ -1,0 +1,1058 @@
+/*font-family: 'Quicksand', sans-serif;*/
+/*font-family: 'Lato', sans-serif;*/
+/*font-family: 'Open Sans', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrap {
+    margin-left: 18px;
+}
+
+.logo p {
+    display: block;
+    float: left;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 19px;
+    margin-right: 6px;
+    cursor: pointer;
+    color: black;
+}
+
+.logo img {
+    height: 60px;
+    float: left;
+}
+
+
+.options {
+    display: none;
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+    .logo p {
+        font-size: 21px;
+    }
+
+    .wrap {
+        margin-top: 7px;
+        margin-left: 24px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:411px) {
+    .logo p {
+        font-size: 23px;
+    }
+
+    .wrap {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+    .logo p {
+        font-size: 32px;
+    }
+
+    .wrap {
+        margin-top: 10px;
+        margin-left: 136px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:533px) {
+    .wrap {
+
+        margin-left: 107px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:640px) {
+    .wrap {
+
+        margin-left: 141px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:731px) {
+    .wrap {
+
+        margin-left: 184px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:812px) {
+    .wrap {
+
+        margin-left: 205px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:823px) {
+    .wrap {
+
+        margin-left: 217px;
+    }
+}
+
+
+@media(min-width:1024px) {
+    .navigation {
+        padding-bottom: 10px;
+        position: fixed;
+        z-index: 2;
+        background-color: white;
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    .options {
+        display: block;
+        float: right;
+        margin-right: 41px;
+    }
+
+    .logo {
+        width: 30%;
+        margin: 0;
+        float: left;
+        margin-top: 9px;
+        margin-left: 50px;
+    }
+
+    .wrap {
+
+        margin-left: 0px;
+    }
+
+    .option {
+        float: right;
+        margin-top: 25px;
+        cursor: pointer;
+
+    }
+
+    .option a {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 19px;
+        padding: 10px 21px;
+        border-right: 2px solid #555;
+        cursor: pointer;
+        letter-spacing: 0px;
+        color: black;
+        text-decoration: none;
+
+    }
+
+    div.option:nth-child(1) a {
+
+        border-right: 0px;
+    }
+
+
+    .option:hover a {
+        color: gray;
+
+
+    }
+}
+
+
+
+div.jpg {
+    position: relative;
+    background-image: url(../img/pierwszafota.jpg);
+    background-repeat: no-repeat;
+    background-position: 20% 0%;
+    background-size: cover;
+    height: 90vh;
+    overflow: hidden;
+
+
+}
+
+.join {
+    position: relative;
+}
+
+.join p.dolacz {
+    position: absolute;
+    top: 60%;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+    .join p.dolacz {
+        font-size: 28px;
+
+    }
+}
+
+@media(orientation:portrait) and (min-width:375px) and (min-height:812px) {
+    div.jpg {
+        height: 92vh;
+
+
+    }
+}
+
+@media(orientation:portrait) and (min-width:411px) {
+    div.jpg {
+        height: 92vh;
+
+
+
+    }
+
+    .join p.dolacz {
+        font-size: 32px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+    div.jpg {
+        height: 92vh;
+    }
+
+    .join p.dolacz {
+        font-size: 45px;
+    }
+
+    .navigation {
+        padding-bottom: 15px;
+    }
+}
+
+@media(orientation:landscape) {
+    .join p.dolacz {
+        top: 50%;
+    }
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+    .navigation {
+        width: 100vw;
+    }
+
+    div.jpg {
+        height: 100vh;
+        background-position: 20% -25%;
+        background-attachment: fixed;
+
+
+
+    }
+
+    .join p.dolacz {
+        position: fixed;
+        z-index: 0;
+        top: 55%;
+        left: 26%;
+        background-color: transparent;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 35px;
+        color: black;
+        font-weight: bold;
+        width: 100%;
+        text-align: center;
+        cursor: default;
+
+    }
+
+}
+
+.aboutme {}
+
+.aboutme h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: #C0DD4A;
+    color: black;
+
+}
+
+
+
+
+.jpg1 {
+    background-image: url(../img/ja.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.cover {
+    background-color: black;
+}
+
+.description {
+    position: relative;
+}
+
+
+
+.description p {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    color: white;
+    top: 47%;
+    margin: 0px 31px;
+
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+
+    .jpg1 {
+        height: 91vh;
+    }
+
+    .description p {
+        font-size: 19px;
+        top: 46%;
+        margin: 0px 28px;
+
+    }
+}
+
+@media(orientation:portrait) and (min-width:375px) and (min-height:812px) {
+
+
+    .aboutme h1 {
+        font-size: 28px;
+        padding: 20px 0;
+    }
+
+    .description p {
+        font-size: 20px;
+        top: 58%;
+        margin: 0px 28px;
+    }
+
+
+
+}
+
+@media(orientation:portrait) and (min-width:411px) {
+
+
+
+    .description p {
+        font-size: 20px;
+        top: 55%;
+        margin: 0px 28px;
+    }
+
+    .aboutme h1 {
+        font-size: 32px;
+        padding: 20px 0;
+    }
+
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+
+
+
+    .description p {
+        font-size: 30px;
+        top: 55%;
+        margin: 0px 75px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:500px) {
+
+
+    div.description {
+        background-color: #eee;
+    }
+
+    .cover {
+        float: left;
+        background-color: transparent;
+        width: 50%;
+        height: 100%;
+    }
+
+    .description p {
+        float: left;
+        position: static;
+        color: black;
+        width: 50%;
+        margin: 0;
+        padding: 22px 15px;
+
+
+    }
+
+    .jpg1 {
+        background-image: url(../img/ja.jpg);
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        opacity: 1;
+    }
+}
+
+@media(orientation:landscape) and (min-width:640px) {
+
+
+
+
+
+    .description p {
+
+        padding: 44px 21px;
+        font-size: 17px;
+
+    }
+
+
+}
+
+
+@media(orientation:landscape) and (min-width:731px) {
+
+    .description p {
+        padding: 50px 25px;
+        font-size: 19px;
+
+    }
+
+}
+
+
+@media(orientation:landscape) and (min-width:1024px) {
+
+    .aboutme h1 {
+        font-size: 32px;
+        padding: 20px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .jpg1 {
+
+        height: 78vh;
+    }
+
+    .description p {
+
+        padding: 139px 45px;
+        font-size: 21px;
+
+    }
+}
+
+@media (min-width: 1920px) and (orientation: landscape) {
+
+    div.jpg {
+
+        background-position: 0% -12%;
+
+    }
+}
+
+
+.worth h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: #C0DD4A;
+    color: black;
+}
+
+.item:nth-of-type(1) {
+    background-image: url(../img/black-white-3581502_1920.jpg);
+}
+
+.item:nth-of-type(2) {
+    background-image: url(../img/miesnie.jpg);
+}
+
+.item:nth-of-type(3) {
+    background-image: url(../img/kamila%20960x640.jpg);
+}
+
+.item:nth-of-type(4) {
+    background-image: url(../img/people.jpg);
+}
+
+
+.item {
+    position: relative;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.item p {
+    line-height: 40vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 0px 4px black;
+    padding: 0px 0px;
+}
+
+@media(orientation:portrait) and (min-width:375px) {
+
+
+    .item p {
+        font-size: 18px;
+    }
+}
+
+@media (min-height: 812px) and (min-width: 375px) and (orientation: portrait) {
+    .worth h1 {
+        font-size: 28px;
+        padding: 20px 0;
+    }
+}
+
+@media(orientation:portrait) and (min-width:411px) {
+    .worth h1 {
+        font-size: 32px;
+
+    }
+
+    .item p {
+        font-size: 20px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+
+
+    .item p {
+        font-size: 30px;
+    }
+}
+
+@media(orientation:landscape) {
+
+    .worth h1 {
+        position: relative;
+        z-index: 1;
+    }
+
+    .item {
+        position: relative;
+        height: 45vh;
+        width: 50%;
+        float: left;
+        background-position: center;
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .item p {
+        line-height: 45vh;
+    }
+}
+
+
+@media(orientation:landscape) and (min-width:1024px) {
+
+    .worth h1 {
+        font-size: 32px;
+        padding: 20px 0;
+    }
+
+    .item p {
+
+        opacity: 0;
+        transition: 1s;
+        background-color: transparent;
+    }
+
+    .item:hover p {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .item:hover {
+        background-size: 130%;
+    }
+
+}
+
+.experiences {
+    background-color: #C0DD4A;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper {
+
+    background-color: #222;
+}
+
+.experiences h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.experience {
+    margin-bottom: 17px;
+
+}
+
+.experience:nth-last-child(1) {
+    margin-bottom: 0px;
+
+}
+
+
+
+.experience:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+
+.experience:nth-of-type(even) {
+    background-color: #0170ba;
+}
+
+.image img {
+    width: 100%;
+}
+
+
+.opis h2 {
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    padding: 13px 0;
+    border-bottom: 1px solid white;
+    text-indent: 10px;
+    text-transform: uppercase;
+
+}
+
+.opis {
+    height: 45vh;
+}
+
+.opis p {
+    color: white;
+    padding: 40px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+    .opis h2 {
+        font-size: 20px;
+    }
+
+    .opis p {
+        font-size: 18px;
+    }
+}
+
+
+@media(orientation:portrait) and (min-width:411px) {
+    .opis h2 {
+        font-size: 21px;
+        text-indent: 13px;
+    }
+
+    .opis p {
+        font-size: 19px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+    .opis h2 {
+        font-size: 38px;
+
+    }
+
+    .opis p {
+        font-size: 24px;
+        padding: 40px 27px;
+    }
+}
+
+
+@media(orientation:landscape) {
+
+    .wrapper {
+        padding: 0px 10px;
+        padding-top: 15px;
+    }
+
+    .experience {
+        overflow: hidden;
+
+    }
+
+    .image {
+        width: 50%;
+        float: left;
+    }
+
+    .image img {
+        display: block;
+    }
+
+    .experience:nth-of-type(2) .image {
+        float: right;
+    }
+
+    .experience:nth-of-type(2) .opis h2 {
+        text-indent: 0px;
+        width: 90%;
+        margin-left: 10%;
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    .opis {
+        width: 50%;
+        float: left;
+    }
+
+    .opis h2 {
+        font-size: 14px;
+    }
+
+    .opis p {
+        font-size: 12px;
+        padding: 30px 27px;
+    }
+
+}
+
+@media(orientation:landscape) and (min-width:640px) {
+    .opis p {
+
+        padding: 30px 30px;
+
+    }
+}
+
+@media(orientation:landscape) and (min-width:731px) {
+    .opis p {
+        font-size: 14px;
+        padding: 35px 37px;
+
+    }
+
+    .opis h2 {
+        font-size: 16px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+
+    .experiences h1 {
+        font-size: 32px;
+        padding: 20px 0;
+    }
+
+    .experience {
+        margin-bottom: 60px;
+    }
+
+    .wrapper {
+        padding: 0px 100px;
+        padding-top: 50px;
+
+
+    }
+
+    .opis p {
+        font-size: 21px;
+        padding: 80px 60px;
+
+    }
+
+    .opis h2 {
+        padding-top: 30px;
+        font-size: 22px;
+        text-indent: 25px;
+    }
+}
+
+.contacts {
+    position: relative;
+    z-index: 1;
+}
+
+.contacts h1 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    background-color: #C0DD4A;
+    color: black;
+
+}
+
+.logos {
+    padding-top: 35px;
+}
+
+.secwrap {
+    background-color: black;
+    padding-bottom: 50px;
+}
+
+.znak {
+    float: left;
+}
+
+.contact {
+
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.contact img {
+    display: block;
+    height: 55px;
+    padding-left: 25px;
+    padding-right: 15px;
+}
+
+.contact a {
+    display: block;
+    float: left;
+
+    line-height: 100%;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.contact p {
+
+    float: left;
+    height: 100%;
+    color: white;
+}
+
+.contact p,
+.contact a {
+    line-height: 55px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.form {
+    padding-top: 30px;
+}
+
+.form input,
+.form textarea {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 45px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.form textarea {
+    height: 80px;
+}
+
+.form button {
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+
+    .contact p,
+    .contact a {
+
+        font-size: 18px;
+    }
+
+}
+
+
+@media(orientation:portrait) and (min-width:411px) {
+
+    .contact p,
+    .contact a {
+        line-height: 65px;
+        font-size: 21px;
+    }
+
+    .contact img {
+        height: 65px;
+    }
+
+    .form input,
+    .form textarea {
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .form textarea {
+        height: 90px;
+    }
+
+    .form button {
+        font-size: 21px;
+    }
+}
+
+
+@media(orientation:landscape) and (min-width:1024px) {
+    .secwrap {
+        padding: 1px 137px;
+        padding-bottom: 60px;
+    }
+
+    .contacts h1 {
+
+        font-size: 32px;
+        padding: 20px 0;
+    }
+
+    .logos,
+    .form {
+        padding-top: 80px;
+        width: 50%;
+        float: left;
+    }
+
+    .contact p,
+    .contact a {
+        line-height: 75px;
+        font-size: 24px;
+    }
+
+    .contact img {
+        height: 75px;
+    }
+
+    .form input,
+    .form textarea {
+        height: 60px;
+        font-size: 21px;
+        margin-bottom: 35px;
+    }
+
+    .form textarea {
+        height: 129px;
+    }
+
+    .form button {
+
+        padding: 20px 35px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.3s;
+
+    }
+
+    .form button:hover {
+        background-color: white;
+        color: black;
+
+    }
+
+    .contact:nth-child(1):hover a {
+
+        border-bottom: 2px solid white;
+        color: #aaa;
+    }
+
+    .contact:nth-child(1):hover {
+
+        padding-bottom: 23px;
+        transition: 0.3s;
+
+    }
+}
+
+
+footer p {
+
+    line-height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    background-color: #29a6dc;
+    color: white;
+    text-align: center;
+}
+
+@media(orientation:portrait) and (min-width:360px) {
+    footer p {
+        line-height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:768px) {
+    footer p {
+        line-height: 60px;
+        font-size: 18px;
+    }
+}
+
+@media(orientation:landscape) and (min-width:640px) {
+    footer p {
+        line-height: 50px;
+        font-size: 18px;
+    }
+}
